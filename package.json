@@ -14,7 +14,6 @@
         "test": "cross-env NODE_ENV=test karma start build/karma.config",
         "test:watch": "npm run test -- --watch"
     },
-    "registry": "https://registry.npm.taobao.org",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
