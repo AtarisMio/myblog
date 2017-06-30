@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>高调不普通的前端攻城尸</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link href="/styles/site.min.css" rel="stylesheet">
+		<link href="/styles/site.min.css" rel="stylesheet">		
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
@@ -27,7 +27,7 @@
 					<div class="container-fluid">
 						<div class="navbar-header">
 							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-								<span class="sr-only">Toggle navigation</span>
+								<span class="sr-only">显示导航</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
 							<a href="/" class="navbar-brand">高调不普通的前端攻城尸</a>
@@ -42,9 +42,9 @@
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
+								<li><a href="/keystone/signout">登出</a></li>
 								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
+								<li><a href="/keystone/signin">登录</a></li>
 								{{/if}}
 							</ul>
 						</div>
@@ -84,8 +84,8 @@
 			<!-- The content block should contain the body of your template's content-->
 			{{{body}}}
 		</div>
-		<div class="container">
-			<div id="footer">
+		<div id="footer">
+			<div class="container">
 				<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
 			</div>
 		</div>
@@ -94,7 +94,7 @@
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
 			//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		--}}
-		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+		<script src="/js/jquery/jquery-2.1.4.min.js"></script>
 		{{!--
 			//- Customise which Bootstrap javascript files are served by including
 			//- them specifically here, instead of bootstrap-3.3.5.min.js
