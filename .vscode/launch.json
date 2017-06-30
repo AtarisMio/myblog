@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "启动程序",
             "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/build/scripts/start",
+            "program": "${workspaceRoot}/keystone.js",
             "env": {
                 "NODE_ENV": "development"
             }
